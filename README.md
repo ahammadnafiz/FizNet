@@ -6,15 +6,6 @@ FizNet is an under-development Python library that offers a collection of machin
 
 Note: Currently, FizNet is not packaged for distribution and is under active development. More algorithms and features will be added in future releases.
 
-## Table of Contents 📚
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Available Models](#available-models)
-- [API Reference](#api-reference)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features ✨
 
 - **Logistic Classifier:** Efficient for binary classification tasks with a simple API.
