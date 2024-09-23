@@ -1,42 +1,41 @@
-# FizNet 🚀
+# ZyLearn 🚀
 
 **Version:** 0.1.0
 
-FizNet is an under-development Python library that offers a collection of machine learning models for various tasks, including classification and beyond. Currently, it features implementations of logistic regression, neural networks, and k-nearest neighbors (KNN) classifiers. Designed for ease of use, FizNet enables researchers and practitioners to quickly experiment with different machine learning techniques.
+ZyLearn is an under-development Python library that provides a collection of machine-learning models for various tasks, including classification and beyond. Currently, it features implementations of logistic regression, neural networks, and k-nearest neighbors (KNN) classifiers. Designed for ease of use, ZyLearn allows researchers and practitioners to quickly experiment with different machine learning techniques.
 
-Note: Currently, FizNet is not packaged for distribution and is under active development. More algorithms and features will be added in future releases.
+Note: ZyLearn is still under active development and has not yet been packaged for distribution. Future releases will include more algorithms and features.
 
 ## Features ✨
 
-- **Logistic Classifier:** Efficient for binary classification tasks with a simple API.
-- **Neural Network:** A flexible architecture for handling both simple and complex problems.
-- **KNN Classifier:** An intuitive model for classification based on feature similarity.
-- **Future Enhancements:** Additional algorithms and features are planned for future releases.
-- **Future Enhancements:** Additional algorithms and features are planned for future releases.
+- **Logistic Classifier:** A robust model for binary classification with an easy-to-use API.
+- **Neural Network:** Flexible architecture for both simple and complex tasks.
+- **KNN Classifier:** Intuitive classification model based on feature similarity.
+- **Upcoming Additions:** New algorithms and tools are planned for future versions.
 
 ## Getting Started 🏁
 
-To get started with FizNet, import the desired model and fit it to your dataset. Here’s a quick example demonstrating how to use each classifier:
+To start using ZyLearn, import and train the desired model on your dataset. Here's a quick example showcasing how to use the available models:
 
 ```python
 import numpy as np
-from FizNet.logistic_regression import LogisticClassifier
-from FizNet.neural_network import NN
-from FizNet.knn_classifier import KNNClassifier
+from ZyLearn.logistic_regression import LogisticClassifier
+from ZyLearn.neural_network import NN
+from ZyLearn.knn_classifier import KNNClassifier
 
 # Sample data
 X_train = np.random.rand(100, 10)
 y_train = np.random.randint(0, 2, size=100)
 X_test = np.random.rand(20, 10)
 
-# Initialize the models
+# Initialize models
 logistic_model = LogisticClassifier()
-nn_model = NN(layer_dims=[X_train.shape[0], 10, 5, 2])
+nn_model = NN(layer_dims=[X_train.shape[1], 10, 5, 2])
 knn_model = KNNClassifier()
 
-# Train the models
+# Train models
 logistic_model.train(X_train, y_train, num_iterations=2500, learning_rate=0.1)
-nn_model.train(X_train, y_train, num_iterations=2500, learning_rate=0.1 )
+nn_model.train(X_train, y_train, num_iterations=2500, learning_rate=0.1)
 knn_model.train(X_train, y_train)
 
 # Make predictions
@@ -47,16 +46,16 @@ knn_predictions = knn_model.predict(X_test)
 
 ## Available Models 🛠️
 
-FizNet provides the following models for classification:
+ZyLearn currently provides the following models for classification tasks:
 
 - **LogisticClassifier**
-- **NN**
+- **NN (Neural Network)**
 - **KNNClassifier**
 
-You can programmatically retrieve the list of available models:
+You can list the available models programmatically:
 
 ```python
-from FizNet import get_available_models
+from ZyLearn import get_available_models
 
 models = get_available_models()
 print(models)
@@ -64,16 +63,16 @@ print(models)
 
 ## Contributing 🤝
 
-We welcome contributions! Feel free to submit issues, fork the repository, and create pull requests. For larger changes, consider opening an issue to discuss your proposal before implementing it.
+We invite contributions! Whether it's submitting issues, forking the repository, or creating pull requests, we'd love your help. Please open an issue to discuss your proposal before starting work for larger changes.
 
 ### Steps to Contribute
 
 1. Fork the repository.
 2. Create a new feature branch.
 3. Implement your changes.
-4. Ensure tests pass and update documentation if necessary.
+4. Ensure tests pass and update documentation as needed.
 5. Submit a pull request.
 
 ## License 📝
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/ahammadnafiz/FizNet/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/ahammadnafiz/ZyLearn/blob/main/LICENSE) file for details.
